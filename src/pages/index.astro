@@ -1,46 +1,22 @@
 ---
-import Navbar from '@/components/Navbar.astro'
-import Footer from '@/components/Footer.astro'
-import Hero from '@/components/Hero.astro'
-import AboutSection from '@/components/AboutSection.astro'
+import Layout from "../layouts/Layout.astro";
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import Footer from "../components/Footer.astro";
 ---
 
-<head>
-  <title>Chirag Dodiya | Senior Bubble Developer</title>
-  <meta name="description" content="Chirag Dodiya is a senior Bubble.io developer helping businesses build scalable, no-code web apps and MVPs quickly and efficiently. Hire Bubble experts today." />
-  <meta property="og:title" content="Chirag Dodiya - Senior Bubble Developer" />
-  <meta property="og:description" content="Transform your business ideas into scalable, high-quality web applications with expert Bubble development." />
-  <meta property="og:image" content="/images/chirag-bubble-hero.jpg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<div class="min-h-screen flex flex-col bg-white dark:bg-gray-950 transition-colors duration-300">
-  <Navbar />
-
-  <main class="flex-1">
+<Layout title="Chirag Dodiya — Modern Landing Page" description="A beautiful, modern landing page built for Chirag Dodiya. Responsive, accessible, and fast.">
+  <Navbar brand="Chirag Dodiya" />
+  <main>
     <Hero
       title="Chirag Dodiya"
-      subtitle="Senior Bubble Developer"
-      content="Accelerate your startup with powerful, production-grade apps—no code required. I build scalable MVPs, business platforms, and automations using Bubble.io, trusted by founders & fast-growing teams worldwide."
-      ctaText="Start Your Project"
-      ctaHref="#contact"
-      imageSrc="/images/chirag-bubble-hero.jpg"
-      alt="Bubble app development illustration"
+      subtitle="Delivering modern landing pages with speed, design, and performance."
+      ctaText="Get Started"
+      ctaLink="#get-started"
+      imageUrl="/images/landing-hero.jpg"
+      imageAlt="Hero image for Chirag Dodiya"
     />
-
-    <AboutSection 
-      title="Expert in Bubble.io Development"
-      content="With 5+ years delivering robust no-code solutions, I offer full-cycle Bubble app development—UI/UX, integration, logic, and launch. Save months of engineering: automate workflows, scale user bases, and iterate rapidly with confidence."
-      points={[
-        "Custom Bubble apps for MVPs and scale-ups",
-        "API Integrations & workflow automations",
-        "Performance, SEO & launch best practices",
-        "Mentorship & code audits for Bubble teams"
-      ]}
-      imageSrc="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=720&q=80"
-      alt="No-code development on Bubble platform"
-    />
+    <!-- Additional sections/components here -->
   </main>
-
-  <Footer />
-</div>
+  <Footer brand="Chirag Dodiya" />
+</Layout>
